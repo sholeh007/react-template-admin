@@ -1,7 +1,7 @@
 import { Box, Icon, Link, WrapItem } from "@chakra-ui/react"
 import { NavLink } from "react-router-dom"
 
-export default function ListItem({ url, icon, text }) {
+export default function ListItem({ url, icon, text, onClick }) {
   return (
     <Link
       as={NavLink}
@@ -10,6 +10,7 @@ export default function ListItem({ url, icon, text }) {
       to={url}
       rounded="lg"
       p={2}
+      onClick={onClick}
     >
       <WrapItem color="text-color-base">
         <Icon as={icon} boxSize={5} />
