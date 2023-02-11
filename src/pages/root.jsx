@@ -1,5 +1,6 @@
 import { Box, Grid, GridItem, useDisclosure } from "@chakra-ui/react"
 import { Outlet } from "react-router-dom"
+import Footer from "../components/organisms/Footer"
 import Header from "../components/organisms/Header"
 import MobileSidebar from "../components/organisms/MobileSidebar"
 import Sidebar from "../components/organisms/Sidebar"
@@ -39,12 +40,14 @@ export default function Root() {
           <Header onOpen={onOpen} />
         </GridItem>
         {/* Main */}
-        <GridItem area="main">
+        <GridItem area="main" shadow="sm">
           {/* child */}
           <Outlet />
         </GridItem>
         {/* Footer */}
-        <GridItem area="footer">Footer</GridItem>
+        <GridItem area="footer">
+          <Footer />
+        </GridItem>
       </Grid>
     </Box>
   )

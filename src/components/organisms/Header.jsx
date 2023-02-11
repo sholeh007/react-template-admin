@@ -9,6 +9,7 @@ export default function Header({ onOpen }) {
     <Flex
       justify={{ base: "space-between", md: "flex-end" }}
       alignItems="center"
+      h="100%"
       px={6}
       py={5}
     >
