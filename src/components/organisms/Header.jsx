@@ -11,7 +11,7 @@ export default function Header({ onOpen }) {
       alignItems="center"
       h="100%"
       px={6}
-      py={5}
+      py={4}
     >
       {/* mobile-button-sidebar */}
       <Icon

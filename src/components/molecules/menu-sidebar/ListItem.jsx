@@ -10,6 +10,7 @@ export default function ListItem({ url, icon, text, onClick }) {
       to={url}
       rounded="lg"
       p={2}
+      w="85%"
       onClick={onClick}
     >
       <WrapItem color="text-color-base">

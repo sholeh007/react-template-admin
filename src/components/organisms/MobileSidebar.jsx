@@ -16,7 +16,7 @@ export default function MobileSidebar({ onClose, isOpen }) {
       <DrawerOverlay />
       <DrawerContent bg="bg-color-base">
         <DrawerCloseButton />
-        <Box as="div" p="6" maxH="80vh" overflowY="auto">
+        <Box as="div" py={6} px={4}>
           {/* Logo */}
           <Logo title="School" />
           {/* Menu List */}

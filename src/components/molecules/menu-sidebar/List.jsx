@@ -1,4 +1,5 @@
 import { Box, Divider, Text, Wrap } from "@chakra-ui/react"
+import SimpleBar from "simplebar-react"
 
 export default function List({ title, children }) {
   return (
@@ -9,9 +10,11 @@ export default function List({ title, children }) {
         <Divider borderColor="text-color-base" width="28" />
       </Box>
       {/* List */}
-      <Wrap direction="column" spacingY={3}>
-        {children}
-      </Wrap>
+      <SimpleBar style={{ maxHeight: "70vh", overflowX: "hidden" }}>
+        <Wrap direction="column" spacingY={3}>
+          {children}
+        </Wrap>
+      </SimpleBar>
     </>
   )
 }

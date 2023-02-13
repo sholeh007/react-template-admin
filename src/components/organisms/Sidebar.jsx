@@ -6,7 +6,7 @@ import ListItem from "../molecules/menu-sidebar/ListItem"
 
 export default function Sidebar() {
   return (
-    <Box as="div" p="6" maxH="80vh" overflowY="auto">
+    <Box as="div" py={6} px={4}>
       {/* Logo */}
       <Logo title="School" />
       {/* Menu List */}

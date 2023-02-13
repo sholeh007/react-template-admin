@@ -28,7 +28,7 @@ export default function Root() {
         h="100vh"
         templateAreas={templateAreas}
         gridTemplateColumns={`200px 1fr`}
-        gridTemplateRows={`80px 1fr 50px`}
+        gridTemplateRows={`60px 1fr 50px`}
       >
         {/* Sidebar */}
         <GridItem area="side" shadow="md" display={{ base: "none", md: "block" }}>
