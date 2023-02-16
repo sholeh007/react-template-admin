@@ -1,9 +1,18 @@
 {
   "name": "react-template-admin",
   "author": "sholeh007",
-  "private": true,
-  "version": "0.0.0",
+  "description": "CMS admin template using chakra ui",
+  "version": "1.0.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sholeh007/react-template-admin"
+  },
+  "keywords": [
+    "template-admin",
+    "react-template-admin"
+  ],
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
