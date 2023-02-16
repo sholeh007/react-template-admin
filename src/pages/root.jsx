@@ -23,7 +23,7 @@ export default function Root() {
 
   return (
     // layout
-    <Box as="div" bgColor="bg-color-base">
+    <Box bgColor="bg-color-base">
       <Grid
         h="100vh"
         templateAreas={templateAreas}
@@ -40,7 +40,7 @@ export default function Root() {
           <Header onOpen={onOpen} />
         </GridItem>
         {/* Main */}
-        <GridItem area="main" shadow="sm">
+        <GridItem area="main" shadow="sm" overflowY="auto">
           {/* child */}
           <Outlet />
         </GridItem>

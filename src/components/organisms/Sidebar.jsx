@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react"
-import { Gauge, GraduationCap } from "lucide-react"
+import { lists } from "../../data/list-sidebar"
 import Logo from "../atoms/Logo"
 import List from "../molecules/menu-sidebar/List"
 import ListItem from "../molecules/menu-sidebar/ListItem"
@@ -11,8 +11,9 @@ export default function Sidebar() {
       <Logo title="School" />
       {/* Menu List */}
       <List title="Main Menu">
-        <ListItem url="/" icon={Gauge} text="Dashboard" />
-        <ListItem url="/student" icon={GraduationCap} text="Students" />
+        {lists.map((list) => (
+          <ListItem key={list.id} url={list.url} icon={list.icon} text={list.text} />
+        ))}
       </List>
     </Box>
   )
