@@ -15,8 +15,9 @@ export default function ListItem({ url, icon, text, onClick }) {
     >
       <WrapItem color="text-color-base">
         <Icon as={icon} boxSize={5} />
-        <Box as="span" pl={1}></Box>
-        {text}
+        <Box as="span" pl={1}>
+          {text}
+        </Box>
       </WrapItem>
     </Link>
   )

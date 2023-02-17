@@ -1,4 +1,4 @@
-import { Gauge, GraduationCap } from "lucide-react"
+import { Gauge } from "lucide-react"
 
 export const lists = [
   {
@@ -6,11 +6,5 @@ export const lists = [
     icon: Gauge,
     url: "/",
     text: "Dashboard",
-  },
-  {
-    id: 2,
-    icon: GraduationCap,
-    url: "/student",
-    text: "Students",
   },
 ]
